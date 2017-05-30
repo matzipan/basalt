@@ -15,6 +15,8 @@ as a shared library. To link against it, add it as a git submodule:
 And then add the following line to your `CMakeLists.txt` file:
 
     add_subdirectory (lib/basalt)
+    
+The demo application code is a good starting point for the usage of the library.
 
 ## Building, Testing, and Installation
 
