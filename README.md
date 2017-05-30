@@ -10,7 +10,7 @@ but it is too opinionated.
 It is meant to be statically linked, so it might need some convincing if it needs packaging 
 as a shared library. To link against it, add it as a git submodule: 
 
-    git submodule add git@github.com:matzipan/basalt lib/basalt
+    git submodule add git@github.com:matzipan/basalt.git lib/basalt
     
 And then add the following line to your `CMakeLists.txt` file:
 
