@@ -5,7 +5,7 @@ app that are reusable enough that other developers might benefit from them. It w
 originally intended to be merged into [Granite](http://github.com/elementary/granite),
 but it is too opinionated.
 
-# Using it
+## Using it
 
 It is meant to be statically linked, so it might need some convincing if it needs packaging 
 as a shared library. To link against it, add it as a git submodule: 
