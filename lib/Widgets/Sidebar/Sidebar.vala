@@ -8,7 +8,7 @@
 namespace Basalt.Widgets {
     public class Sidebar : Gtk.ScrolledWindow {
         
-        private Gtk.ListBox listbox; 
+        protected Gtk.ListBox listbox;
     
         public Sidebar () {
             Object ();
@@ -20,6 +20,7 @@ namespace Basalt.Widgets {
 
         private void build_ui () {  
             width_request = 176;
+            hexpand = false;
             get_style_context ().add_class (Gtk.STYLE_CLASS_SIDEBAR);
 
             listbox = new Gtk.ListBox ();
@@ -48,8 +49,6 @@ namespace Basalt.Widgets {
 
                 return new SidebarRow (sidebar_model);
             }
-
-
         }
     }
 }
