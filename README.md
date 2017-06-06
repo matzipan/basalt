@@ -16,6 +16,14 @@ And then add the following line to your `CMakeLists.txt` file:
 
     add_subdirectory (lib/basalt)
     
+To link a target against it:
+
+    target_link_libraries (<your target> basalt)
+    
+And the vapi path is:
+
+     ${CMAKE_BINARY_DIR}/lib/basalt/lib/basalt.vapi
+    
 The demo application code is a good starting point for the usage of the library.
 
 ## Building, Testing, and Installation
