@@ -13,6 +13,11 @@ set (VALA_SOURCES
     Widgets/Sidebar/PixbuffableIcon.vala
 )
 
+set (C_SOURCES
+    Widgets/Wrapbox/eggwrapbox.c
+    Widgets/Wrapbox/eggwrapbox-enums.c
+)
+
 # Link all
 set (CFLAGS ${DEPS_CFLAGS} ${DEPS_CFLAGS_OTHER})
 add_definitions (${CFLAGS} "-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\"")
@@ -46,3 +51,6 @@ set (LIB_FILES ${C_SOURCES} ${VALA_C})
 add_library (${PROJECT_NAME} ${LIB_FILES})
 
 target_link_libraries (${PROJECT_NAME} ${LIBS})
+target_include_directories (${PROJECT_NAME} INTERFACE Widgets/Wrapbox/)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES VAPI_FILES "${CMAKE_CURRENT_SOURCE_DIR}/Widgets/Wrapbox/eggwrapbox.vapi;${CMAKE_CURRENT_BINARY_DIR}/basalt.vapi")
