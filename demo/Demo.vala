@@ -8,7 +8,7 @@ public class Basalt.Demo : Granite.Application {
      * Basic app information for Granite.Application. This is used by the About dialog.
      */
     construct {
-        application_id = "ro.webmonsters.basalt";
+        application_id = "com.github.matzipan.basalt";
         flags = ApplicationFlags.FLAGS_NONE;
 
         program_name = "Basalt Demo";
