@@ -50,4 +50,4 @@ elseif (${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD")
 endif ()
 
 add_subdirectory (lib)
-# add_subdirectory (demo) @TODO
+add_subdirectory (demo)
