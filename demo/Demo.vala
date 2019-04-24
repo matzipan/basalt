@@ -124,16 +124,7 @@ public class Basalt.Demo : Granite.Application {
                 return false; 
             });
         });
-        removable_drive.popup_menu.connect ((model) => {
-            var menu = new Gtk.Menu ();
-            
-            menu.add (new Gtk.MenuItem.with_label ("Unmount"));
-            menu.add (new Gtk.MenuItem.with_label ("Properties"));
-            
-            menu.show_all ();
-            
-            return menu;
-        });
+
         devices.children.append (removable_drive);
         
         var inbox = new Basalt.Widgets.SidebarExpandableRowModel.with_icon_name ("Inbox", "mail-inbox", false);
