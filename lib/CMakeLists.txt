@@ -36,6 +36,9 @@ vala_precompile (VALA_C ${PROJECT_NAME}
     ${VALA_SOURCES}
 PACKAGES
     ${PKG_DEPS}
+OPTIONS
+	--gir=Basalt-${API_VERSION}.gir
+	--library=Basalt-${API_VERSION}
 GENERATE_HEADER
     ${PROJECT_NAME}
 GENERATE_VAPI
